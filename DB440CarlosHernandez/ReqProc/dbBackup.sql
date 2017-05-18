@@ -1,0 +1,6 @@
+CREATE PROC dbBackup
+AS 
+BEGIN
+	BACKUP DATABASE [s17guest57] TO  DISK = N'C:\Program Files\Microsoft SQL Server\MSSQL11.CSDB440\MSSQL\Backup\s17guest57.bak' WITH NOFORMAT, NOINIT,  NAME = N's17guest57-Full Database Backup', SKIP, NOREWIND, NOUNLOAD,  STATS = 10
+END
+GO
